@@ -23,7 +23,7 @@ function generatePassword(){
       pass2 = Math.ceil(num.length * Math.random()*Math.random());
       pass3 = Math.ceil(spec.length * Math.random()*Math.random());
       hold = letters.charAt( pass1 );
-      hold = (password.length%2==0)?(hold.toUpperCase()):(hold);
+      hold = (password.length%2==0)?(hold.toUpperCase()):(hold);// uppercase to meet password requirement
       character += hold;
       character += num.charAt( pass2 );
       character += spec.charAt( pass3 );
